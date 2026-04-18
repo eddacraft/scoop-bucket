@@ -1,0 +1,23 @@
+{
+    "version": "0.3.3-beta",
+    "description": "Deterministic governance for AI-assisted development",
+    "homepage": "https://eddacraft.ai",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/eddacraft/anvil/releases/download/v0.3.3-beta/eddacraft-anvil-x86_64-pc-windows-msvc.zip",
+            "hash": "a057bbcff7c0819606d659fcd9953d874f78ed1b1960d95c370c1754c75e5f5f"
+        }
+    },
+    "bin": "anvil.exe",
+    "checkver": {
+        "github": "https://github.com/eddacraft/anvil"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/eddacraft/anvil/releases/download/v$version/eddacraft-anvil-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
