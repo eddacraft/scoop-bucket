@@ -1,23 +1,37 @@
 {
-    "version": "0.3.3-beta",
-    "description": "Deterministic governance for AI-assisted development",
-    "homepage": "https://eddacraft.ai",
-    "license": "Proprietary",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/eddacraft/anvil/releases/download/v0.3.3-beta/eddacraft-anvil-x86_64-pc-windows-msvc.zip",
-            "hash": "a057bbcff7c0819606d659fcd9953d874f78ed1b1960d95c370c1754c75e5f5f"
-        }
+  "version": "0.3.3-beta",
+  "description": "Deterministic guardrails for AI-assisted development workflows",
+  "homepage": "https://eddacraft.ai",
+  "license": "Proprietary",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/eddacraft/anvil/releases/download/v0.3.3-beta/eddacraft-anvil-x86_64-pc-windows-msvc.zip",
+      "hash": "a057bbcff7c0819606d659fcd9953d874f78ed1b1960d95c370c1754c75e5f5f"
     },
-    "bin": "anvil.exe",
-    "checkver": {
-        "github": "https://github.com/eddacraft/anvil"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/eddacraft/anvil/releases/download/v$version/eddacraft-anvil-x86_64-pc-windows-msvc.zip"
-            }
-        }
+    "arm64": {
+      "url": "https://github.com/eddacraft/anvil/releases/download/v0.3.3-beta/eddacraft-anvil-aarch64-pc-windows-msvc.zip",
+      "hash": "f3885ada20fabe9f42c979191c1649112fea5e79b9ad37f5ff22c9aa620f2243"
     }
+  },
+  "bin": "anvil.exe",
+  "checkver": {
+    "github": "https://github.com/eddacraft/anvil",
+    "regex": "v([\\d.]+(?:-beta[\\w.]*)?)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/eddacraft/anvil/releases/download/v$version/eddacraft-anvil-x86_64-pc-windows-msvc.zip",
+        "hash": {
+          "url": "$url.sha256"
+        }
+      },
+      "arm64": {
+        "url": "https://github.com/eddacraft/anvil/releases/download/v$version/eddacraft-anvil-aarch64-pc-windows-msvc.zip",
+        "hash": {
+          "url": "$url.sha256"
+        }
+      }
+    }
+  }
 }
