@@ -1,16 +1,16 @@
 {
-  "version": "0.3.3-beta",
+  "version": "0.4.0-beta",
   "description": "Deterministic guardrails for AI-assisted development workflows",
   "homepage": "https://eddacraft.ai",
   "license": "Proprietary",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/eddacraft/anvil/releases/download/v0.3.3-beta/eddacraft-anvil-x86_64-pc-windows-msvc.zip",
-      "hash": "a057bbcff7c0819606d659fcd9953d874f78ed1b1960d95c370c1754c75e5f5f"
+      "url": "https://github.com/eddacraft/anvil/releases/download/v0.4.0-beta/eddacraft-anvil-x86_64-pc-windows-msvc.zip",
+      "hash": "ea7d128ea9744c51570aa4112086d10fbb0e99180808ae76fc80ba6ace0915bc"
     },
     "arm64": {
-      "url": "https://github.com/eddacraft/anvil/releases/download/v0.3.3-beta/eddacraft-anvil-aarch64-pc-windows-msvc.zip",
-      "hash": "f3885ada20fabe9f42c979191c1649112fea5e79b9ad37f5ff22c9aa620f2243"
+      "url": "https://github.com/eddacraft/anvil/releases/download/v0.4.0-beta/eddacraft-anvil-aarch64-pc-windows-msvc.zip",
+      "hash": "797da28b477541664b423567daf27352cf743790fe378c20f095e9bfbbdb6b99"
     }
   },
   "bin": "anvil.exe",
